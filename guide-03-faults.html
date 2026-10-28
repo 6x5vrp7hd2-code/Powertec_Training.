@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section 03 &mdash; Faults — Overload, Short-Circuit, Earth Fault | Powertec Training</title>
+<meta name="description" content="Powertec Training — Data Centre AP/SAP Development Programme.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand-lockup">
+      <img src="logo-header.png" alt="Powertec">
+      <span class="division">training</span>
+    </a>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="nav-panel" id="navPanel">
+      <a href="index.html">Home</a>
+      <a href="powertec-training.html">Powertec Training</a>
+      <a href="skills-gap-analysis.html">Skills Gap Analysis</a>
+      <a href="platform.html">The Platform</a>
+      <a href="classroom.html">Classroom Learning</a>
+      <a href="field-evidence.html">Field Evidence</a>
+      <a href="drawing-library.html">Drawing Library</a>
+      <a href="contact.html">Contact</a>
+    </div>
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="guide.html">Guide</a> &rsaquo; Faults — Overload, Short-Circuit, Earth Fault</div>
+    <div class="eyebrow">Section 03</div>
+    <h1>Faults — Overload, Short-Circuit, Earth Fault</h1>
+    <p></p>
+  </div>
+</div>
+<section class="block"><div class="container">
+      <div class="prose"><p>The three-fault taxonomy (overload, short-circuit, earth fault) maps directly onto the “LSIG” protection functions detailed later in section 9.5 (Long time = overload, Short time/Instantaneous = short-circuit, Ground = earth fault) — this is not a coincidence: circuit breaker trip units are literally designed around these three fault families because each has a distinct current magnitude, timescale, and required response.</p><p>Additional context:</p><p>Arc flash physics. The guide’s description of arc flash (electrodynamic forces, arc temperatures of “several thousand degrees,” pressure waves) is well grounded: arc temperatures can exceed 19,000°C — roughly four times the surface temperature of the sun — vaporising copper and creating a supersonic pressure wave. This is why arc flash incident energy calculations (covered in section 16) are treated as a distinct, serious hazard category separate from simple electric shock.</p><p>Prospective short-circuit current (Isc) and standards. The short-circuit study referenced is required practice under IEC 60909 (short-circuit current calculation methodology) internationally, and under IEEE 141/242 (the “Red Book”/“Buff Book”) in North American practice. The output — the prospective Isc at each point in the installation — is what determines the minimum breaking capacity (Icu, developed in section 9.2) that switchgear at that point must have.</p><p>Overload vs short-circuit timescales. The guide’s figures (overload at 1.1–3× rated current, tripping over seconds to minutes; short-circuit reaching tens of thousands of amps in milliseconds) reflect the fundamentally different thermal time constants involved: cable insulation can tolerate a moderate overcurrent for a limited time before dangerous heating occurs, whereas a bolted fault current bypasses any thermal buffering — the risk is instantaneous mechanical and thermal destruction, not gradual ageing.</p></div>
+      <div class="card" style="margin-top:30px;text-align:center;background:#1E1E1E;border-color:#1E1E1E;">
+        <p style="color:#E6E6E6;margin-bottom:14px;">Ready to test your understanding of Section 03?</p>
+        <a href="assessment-03-faults.html" class="btn-cta">Take the Assessment &rarr;</a>
+      </div>
+      <div class="pager">
+        <a href="guide-02-conductors.html">&larr; Conductors — Phase, Neutral, PE and Exposed Conductive Parts</a>
+        <a href="guide.html" class="to-index">All Sections</a>
+        <a href="guide-04-basic-protections.html">Basic Protections &rarr;</a>
+      </div>
+    </div></section>
+<footer class="site-footer">
+  <div class="container">
+    <div class="cols">
+      <div>
+        <h4>Powertec Training</h4>
+        <ul>
+          <li>Data Centre AP/SAP<br>Development Programme</li>
+          <li>A division of Powertec</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Programme</h4>
+        <ul>
+          <li><a href="powertec-training.html">Powertec Training</a></li>
+          <li><a href="skills-gap-analysis.html">Skills Gap Analysis</a></li>
+          <li><a href="platform.html">The Platform</a></li>
+          <li><a href="classroom.html">Classroom Learning</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Evidence</h4>
+        <ul>
+          <li><a href="field-evidence.html">Field Evidence Record</a></li>
+          <li><a href="drawing-library.html">Drawing Library</a></li>
+          <li><a href="platform.html">Training Dashboard</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://powertecutilities.co.uk">Powertec Utilities</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      &copy; Powertec. Powertec Training is a division of Powertec Utilities Ltd, registered in England &amp; Wales, company no. 08117942.
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
