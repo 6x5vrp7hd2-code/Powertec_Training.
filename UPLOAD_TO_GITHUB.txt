@@ -1,0 +1,13 @@
+POWERTEC TRAINING — FLAT GITHUB PACKAGE
+
+Upload EVERY file in this ZIP to the ROOT of the GitHub repository.
+Do not create any folders.
+
+index.html = existing Powertec website, preserved with embedded graphics.
+training.html = 21-module guide dashboard.
+module-01.html ... module-21.html = lesson pages.
+module-XX-assessment.html = separate assessment pages.
+module-XX-answers.html = separate answer-review pages.
+style.css + powertec-logo.png = shared assets for the 63 new pages.
+
+All files are intentionally flat at repository root.
